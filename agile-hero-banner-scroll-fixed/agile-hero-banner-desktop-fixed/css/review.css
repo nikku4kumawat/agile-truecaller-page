@@ -1,0 +1,611 @@
+/* ==============================
+   AGILE REVIEW SECTION
+   ============================== */
+
+.agreview-section {
+  width: 100%;
+  padding: 60px 20px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.agreview-container {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+}
+
+/* ==============================
+   HEADING
+   ============================== */
+
+.agreview-heading {
+  max-width: 760px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.agreview-heading h2 {
+  margin: 0 0 9px;
+  color: #0b1830;
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -1px;
+  font-weight: 800;
+}
+
+.agreview-heading h2 span {
+  color: #176de8;
+}
+
+.agreview-heading p {
+  margin: 0 auto;
+  max-width: 700px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* ==============================
+   SLIDER
+   ============================== */
+
+.agreview-slider-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agreview-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 3px 2px 8px;
+}
+
+.agreview-track {
+  display: flex;
+  gap: 18px;
+  will-change: transform;
+  transition: transform 600ms cubic-bezier(.22, .61, .36, 1);
+}
+
+/* ==============================
+   REVIEW CARD
+   ============================== */
+
+.agreview-card {
+  flex: 0 0 calc((100% - 54px) / 4);
+  min-width: 0;
+  height: 270px;
+
+  padding: 22px 20px;
+
+  border: 1px solid #e4eaf2;
+  border-radius: 17px;
+
+  background: #fff;
+
+  box-shadow: 0 8px 24px rgba(24, 54, 92, 0.06);
+
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.agreview-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 13px 30px rgba(24, 54, 92, 0.09);
+}
+
+.agreview-card:focus-visible {
+  outline: 3px solid rgba(23, 109, 232, 0.22);
+  outline-offset: 3px;
+}
+
+/* ==============================
+   STARS
+   ============================== */
+
+/* ==============================
+   AGILE REVIEW STARS
+   ============================== */
+
+.agreview-stars {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 20px;
+  min-height: 20px;
+
+  gap: 3px;
+
+  margin: 0 0 14px;
+  padding: 0;
+
+  overflow: visible;
+}
+
+/* REAL STAR */
+.agreview-stars span {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  color: #ffae00;
+
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 20px;
+
+  width: auto;
+  height: auto;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 767px) {
+
+  .agreview-stars {
+    display: flex;
+
+    height: 18px;
+    min-height: 18px;
+
+    gap: 3px;
+
+    margin: 0 0 12px;
+  }
+
+  .agreview-stars span {
+    display: block;
+
+    color: #ffae00;
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 18px;
+
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
+
+
+/* ==============================
+   SMALL PHONES
+   ============================== */
+
+@media (max-width: 390px) {
+
+  .agreview-stars {
+    height: 17px;
+    min-height: 17px;
+
+    gap: 2px;
+  }
+
+  .agreview-stars span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+}
+
+/* ==============================
+   MOBILE STARS
+   ============================== */
+
+@media (max-width: 767px) {
+
+  .agreview-stars {
+    display: flex !important;
+
+    width: 100%;
+    height: 18px;
+    min-height: 18px;
+
+    gap: 3px;
+
+    margin: 0 0 12px;
+    padding: 0;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .agreview-stars i {
+    display: inline-block !important;
+
+    width: auto;
+    height: auto;
+
+    color: #ffae00 !important;
+
+    font-family: Arial, sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+
+    font-size: 15px !important;
+    line-height: 1 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .agreview-stars i::before {
+    content: "★" !important;
+
+    display: inline-block !important;
+
+    color: #ffae00 !important;
+
+    font-family: Arial, sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+
+    font-size: 15px !important;
+    line-height: 1 !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+}
+
+
+/* ==============================
+   SMALL PHONES
+   ============================== */
+
+@media (max-width: 390px) {
+
+  .agreview-stars {
+    height: 17px;
+    min-height: 17px;
+
+    gap: 2px;
+  }
+
+  .agreview-stars i {
+    font-size: 14px !important;
+  }
+
+  .agreview-stars i::before {
+    content: "★" !important;
+    font-size: 14px !important;
+  }
+
+}
+/* ==============================
+   REVIEW TEXT
+   ============================== */
+
+.agreview-text {
+  flex: 1;
+
+  overflow: hidden;
+
+  color: #344054;
+
+  font-size: 12.5px;
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+/* ==============================
+   AUTHOR
+   ============================== */
+
+.agreview-author {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 15px;
+  padding-top: 0;
+
+  border-top: none;
+}
+
+.agreview-avatar {
+  width: 39px;
+  height: 39px;
+
+  flex: 0 0 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.agreview-avatar-blue {
+  background: #176de8;
+}
+
+.agreview-avatar-green {
+  background: #18b866;
+}
+
+.agreview-avatar-orange {
+  background: #f59e0b;
+}
+
+.agreview-avatar-purple {
+  background: #8b5cf6;
+}
+
+.agreview-author h3 {
+  margin: 0 0 2px;
+
+  color: #101828;
+
+  font-size: 12.5px;
+  line-height: 1.3;
+  font-weight: 800;
+}
+
+.agreview-author span {
+  color: #98a2b3;
+
+  font-size: 9.5px;
+  font-weight: 600;
+}
+
+/* ==============================
+   ARROWS
+   DESKTOP / LAPTOP / TABLET
+   ============================== */
+
+.agreview-arrow {
+  display: none;
+}
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 767px) {
+
+  .agreview-section {
+    padding: 45px 14px;
+  }
+
+  .agreview-heading {
+    margin-bottom: 22px;
+  }
+
+  .agreview-heading h2 {
+    font-size: 25px;
+    letter-spacing: -0.7px;
+    line-height: 1.2;
+  }
+
+  .agreview-heading p {
+    font-size: 11.5px;
+    line-height: 1.6;
+  }
+
+  .agreview-slider-wrap {
+    gap: 7px;
+  }
+
+  .agreview-slider {
+    padding: 2px 0 7px;
+  }
+
+  .agreview-track {
+    gap: 0;
+  }
+
+  /* ONE CARD AT A TIME */
+
+  .agreview-card {
+    flex: 0 0 100%;
+
+    height: 230px;
+    min-height: 230px;
+
+    padding: 20px 18px;
+
+    border-radius: 15px;
+  }
+
+  /* MOBILE STARS */
+
+  .agreview-stars {
+    display: flex !important;
+
+    height: 17px;
+    min-height: 17px;
+
+    margin-bottom: 12px;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .agreview-stars i {
+    display: inline-flex !important;
+
+    width: 13px;
+    height: 13px;
+
+    font-size: 12px !important;
+  }
+
+  .agreview-stars i::before {
+    content: "\f005" !important;
+
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+
+    color: #ffae00 !important;
+
+    font-size: 12px !important;
+  }
+
+  /* REVIEW TEXT */
+
+  .agreview-text {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  /* AUTHOR */
+
+  .agreview-author {
+    margin-top: 13px;
+    gap: 9px;
+  }
+
+  .agreview-avatar {
+    width: 36px;
+    height: 36px;
+
+    flex-basis: 36px;
+
+    font-size: 12px;
+  }
+
+  .agreview-author h3 {
+    font-size: 11.5px;
+  }
+
+  .agreview-author span {
+    font-size: 9px;
+  }
+
+  /* MOBILE ARROWS */
+
+  .agreview-arrow {
+    display: flex;
+
+    width: 35px;
+    height: 35px;
+
+    flex: 0 0 35px;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dbe5f1;
+    border-radius: 50%;
+
+    background: #fff;
+    color: #176de8;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 16px rgba(24, 54, 92, 0.08);
+
+    z-index: 3;
+  }
+
+  .agreview-arrow:active {
+    background: #176de8;
+    color: #fff;
+  }
+
+  .agreview-arrow i {
+    font-size: 10px;
+  }
+}
+
+/* ==============================
+   SMALL PHONES
+   ============================== */
+
+@media (max-width: 390px) {
+
+  .agreview-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .agreview-heading h2 {
+    font-size: 23px;
+  }
+
+  .agreview-heading p {
+    font-size: 10.5px;
+  }
+
+  .agreview-card {
+    height: 225px;
+    min-height: 225px;
+
+    padding: 18px 16px;
+  }
+
+  .agreview-text {
+    font-size: 11.5px;
+  }
+
+  .agreview-stars {
+    height: 16px;
+    min-height: 16px;
+  }
+
+  .agreview-stars i {
+    width: 12px;
+    height: 12px;
+
+    font-size: 11px !important;
+  }
+
+  .agreview-stars i::before {
+    content: "\f005" !important;
+    font-size: 11px !important;
+  }
+
+  .agreview-arrow {
+    width: 32px;
+    height: 32px;
+
+    flex-basis: 32px;
+  }
+}
+
+/* ==============================
+   REDUCED MOTION
+   ============================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .agreview-track {
+    transition: none;
+  }
+
+  .agreview-card,
+  .agreview-arrow {
+    transition: none;
+  }
+}

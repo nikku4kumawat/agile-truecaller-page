@@ -1,0 +1,160 @@
+
+
+/* =========================================
+   AGILE FOOTER
+========================================= */
+
+.agile-footer {
+    width: 100%;
+    background: #0B0E32;
+    padding: 16px 20px;
+    text-align: center;
+}
+
+.agile-footer p {
+    margin: 0;
+    padding: 0;
+
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .agile-footer {
+        padding: 14px 15px;
+    }
+
+    .agile-footer p {
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================
+   FLOATING BUTTONS
+========================================= */
+
+.floating-buttons {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    z-index: 9999;
+}
+
+
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.float-btn {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 21px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.20);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+.float-btn.whatsapp {
+    background: #25D366;
+}
+
+
+/* =========================================
+   CALL
+========================================= */
+
+.float-btn.call {
+    background: #4267e8;
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.float-btn.location {
+    background: #EA4335;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.float-btn:hover {
+    color: #ffffff;
+
+    transform: scale(1.10);
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.28);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767px) {
+
+    .floating-buttons {
+        right: 12px;
+        bottom: 15px;
+        gap: 8px;
+    }
+
+    .float-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 19px;
+    }
+
+}
+
+
+
+
+
+
+
