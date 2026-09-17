@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const prevBtn = document.querySelector(".agreview-prev");
   const nextBtn = document.querySelector(".agreview-next");
 
+  
   if (!slider || !track) return;
 
   const cards = Array.from(
