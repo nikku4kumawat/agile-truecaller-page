@@ -551,14 +551,14 @@
 
   /* Icons */
 
-  .agvc-icon{
-    width:30px;
-    height:30px;
+  /* .agvc-icon{
+    width:37px;
+    height:37px;
 
     flex-basis:37px;
 
     font-size:17px;
-  }
+  } */
 
 
   /* Mobile text */
@@ -583,10 +583,10 @@
 
   /* Play button */
 
-  .agvc-play-btn{
-    width:30px;
-    height:30px;
-  }
+  /* .agvc-play-btn{
+    width:70px;
+    height:70px;
+  } */
 
   .agvc-play-btn i{
     font-size:22px;
